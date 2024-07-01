@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie's Gadgets</title>
+    <!--Link To Css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav Container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--Logo-->
+            <a href="#" class="logo">Eddie's<span>Gadgets</span></a>
+            <!--Navbar List-->
+            <ul class="navbar">
+                <li> <a href="#home" class="nav-link">Home</a></li>
+                <li> <a href="#order" class="nav-link"></a>CATALOG</li>
+                <li> <a href="#about" class="nav-link">About</a></li>
+                <li> <a href="#payment" class="nav-link">Payment Gateway</a></li>
+                <li> <a href="#Showroom" class="nav-link">Order Tracker</a></li>
+            </ul>
+            <!--search Icon-->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!--search Box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search here...">
+            </div>
+        </div>
+    </header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling to all links
+            document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add active class to the navigation link when scrolled to the corresponding section
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+
+                document.querySelectorAll('.navbar a').forEach(link => {
+                    const section = document.querySelector(link.getAttribute('href'));
+                    if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We have Everthing Electronic <br>  from your <span>Laptops</span> to your Phones and accessories</h1>
+            <p>Explore Eddie's Gadgets. We have your interests and satisfaction at heart</p>
+            <!--home Button-->
+            <a href="#" class="btn">Discover Now</a>
+        </div>
+
+    </section>
+    <!--order section-->
+    <section class="order" id="order">
+        <div class="heading">
+            <span>All Devices</span>
+            <h2>Browse Our Gadgets</h2>
+            
+        </div>
+
+        <div class="payment-container container">
+            <!--Box 1-->
+            <div class="box">
+                <img src="img/L1.jpg" alt="">
+                <h2>Laptop</h2>
+                <span>$200.99</span>
+                <i class='bx bxs-star'>(9 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+            <!--Box 2-->
+            <div class="box">
+                <img src="img/L2.jpg" alt="">
+                <h2>HP</h2>
+                <span>$120.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+
+               <!--Box 7-->
+        <div class="box">
+            <img src="img/L3.jpg" alt="">
+            <h2>Lenovo</h2>
+         <span>$160.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+        </div>
+
+            <!--Box 3-->
+            <div class="box">
+                <img src="img/L4.jpg" alt="">
+                <h2>Campaq</h2>
+                <span>$170.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+
+            <!--Box 4-->
+            <div class="box">
+                <img src="img/L5.jpg" alt="">
+                <h2>Dell</h2>
+                <span>$180.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+
+            <!--Box 5-->
+            <div class="box">
+                <img src="img/L6.jpg" alt="">
+                <h2>Samsung</h2>
+                <span>$199.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+
+            <!--Box 6-->
+            <div class="box">
+                <img src="img/I8.jpg" alt="">
+                <h2>Iphone 8</h2>
+                <span>$300.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+
+            <!--Box 7-->
+            <div class="box">
+                <img src="img/i11.jpg" alt="">
+                <h2>Iphone 11</h2>
+                <span>$400.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+
+            </div>
+
+            <!--Box 8-->
+            <div class="box">
+                <img src="img/i12.jpg" alt="">
+                <h2>Iphone 12</h2>
+                <span>$450.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+
+             <!--Box 6-->
+             <div class="box">
+                <img src="img/i13.jpg" alt="">
+                <h2>Iphone 13</h2>
+                <span>$500.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+
+            </div>
+
+            <!--Box 7-->
+            <div class="box">
+                <img src="img/i13promax.jpg" alt="">
+                <h2>Iphone 13 promax</h2>
+                <span>$600.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+
+            </div>
+
+            <!--Box 8-->
+            <div class="box">
+                <img src="img/i12promax.jpg" alt="">
+                <h3>Iphone pro max</h3>
+                <span>$560.99</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!--About-->
+    <section>
+        <section class="about container" id="about">
+            <div class="about-img">
+                <img src="img/edd.png" alt="">
+                
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <h2>Eddie's Gadgets:Cheap Prices With <br> Quality Devices</h2>
+                <p>Welcome to Eddie's Gadgets, your premier destination for cutting-edge electronic devices and accessories. At Eddie's Gadgets, we're passionate about technology and dedicated to bringing you the latest innovations in the world of gadgets.
+
+                    Our journey began with a simple mission: to provide tech enthusiasts like you with a curated selection of high-quality products that enhance your lifestyle. Whether you're searching for sleek smartphones, powerful laptops, or innovative smart home devices, we've got you covered.</p>
+
+        <p>What sets us apart is our commitment to customer satisfaction. We strive to offer a seamless shopping experience with prompt customer support and secure payment options. Every product we feature is carefully selected for its quality and functionality.</p>
+
+        <p>Eddie's Gadgets isn't just a store; it's a community of tech enthusiasts. Join us on this exciting journey as we explore the limitless possibilities of technology together.</p>
+
+        <p>Discover the future of gadgets at Eddie's Gadgets – where innovation meets excellence.</p>
+                <!--About Button-->
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </section>
+    </section>
+    <!--payment section-->
+    <section class="payment" id="payment">
+        <div class="heading">
+            <h2>Perform all payments here</h2>
+            <p>Transactions are Smooth and easy</p>
+        </div>
+        <div class="wrapper">
+            <div class="payment">
+              <div class="payment-logo">
+                <p>p</p>
+              </div>
+              
+              
+              <h2>Payment Gateway</h2>
+              <div class="form">
+                <div class="card space icon-relative">
+                  <label class="label">Card holder:</label>
+                  <input type="text" class="input" placeholder="Charles Nartey">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="card space icon-relative">
+                  <label class="label">Card number:</label>
+                  <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+                  <i class="far fa-credit-card"></i>
+                </div>
+                <div class="card-grp space">
+                  <div class="card-item icon-relative">
+                    <label class="label">Expiry date:</label>
+                    <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+                  <div class="card-item icon-relative">
+                    <label class="label">CVC:</label>
+                    <input type="text" class="input" data-mask="000" placeholder="000">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                </div>
+                  
+                <div class="btn">
+                  Pay
+                </div> 
+                
+              </div>
+            </div>
+          </div>
+          
+              <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+          
+          
+        </div>
+    </section>
+   
+   
+    </div>
+     <!--Order Treacker Container-->
+     <section class="Showroom" id="Showroom">
+        <div class="heading">
+            
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Order Tracker</title>
+            <link rel="stylesheet" href="style.css">
+        
+            <!-- UniIcon CDN Link  -->
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        </head>
+        <body>
+            <div class="main">
+        
+                <div class="head">
+                    <p class="head_1">Order <span>Tracker</span></p>
+                </div>
+        
+                <ul>
+                    <li>
+                        <i class="icon uil uil-capture"></i>
+                        <div class="progress one">
+                            <p>1</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Add To Cart</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-clipboard-notes"></i>
+                        <div class="progress two">
+                            <p>2</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Fill Details</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-credit-card"></i>
+                        <div class="progress three">
+                            <p>3</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Make Payment</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-exchange"></i>
+                        <div class="progress four">
+                            <p>4</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Order in Progress</p>
+                    </li>
+                    <li>
+                        <i class="icon uil uil-map-marker"></i>
+                        <div class="progress five">
+                            <p>5</p>
+                            <i class="uil uil-check"></i>
+                        </div>
+                        <p class="text">Order Arrived</p>
+                    </li>
+                </ul>
+        
+            </div>
+        
+            <script src="main.js"></script>
+        </body>
+        </html>
+        
+        
+        
+        
+       
+        
+    </div>
+</section>
+   
+    <!--footer-->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Eddie's<span>Gadgets</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#">Payment Gateway</a>
+                <a href="#">Order Tracker</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookies Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+               <p>Dansoman</p>
+               <p>Sowutuom</p>
+               <p>Circle</p>
+               <p>Ghana</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Charles Nartey All Right Reserved</p>
+    </div>
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+    
+</body>
+</html>
